@@ -1,20 +1,19 @@
 //
-//  AppCoordinator.swift
+//  SplashCoordinator.swift
 //  NFTMarket
 //
-//  Created by Ravi Ranjan on 14/06/22.
+//  Created by Ravi Ranjan on 15/06/22.
 //
 
 import Foundation
 import UIKit
-protocol Coordinator: AnyObject {
-    var childCoordinators: [Coordinator] { get set }
-    var navigationController: UINavigationController { get set }
-    func configure()
+protocol SplashRouter {
+    func login()
 }
 
+typealias SplashRouterCoordinator = Coordinator & SplashRouter
 
-class MainCoordinator: Coordinator {
+class MainCoordinator: SplashRouterCoordinator {
     
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
@@ -25,7 +24,7 @@ class MainCoordinator: Coordinator {
     func configure() {
         let viewModel = SplashViewModel()
         let vc = SplashViewController(viewModel: viewModel)
-        vc.cordinator = self
+        vc.viewModel.cordinator = self
         navigationController.pushViewController(vc, animated: false)
     }
     
@@ -34,15 +33,6 @@ class MainCoordinator: Coordinator {
         child.parentCoordinator = self
         childCoordinators.append(child)
         child.configure()
-    }
-    
-    func childDidFinish(_ child: Coordinator?) {
-        for (index, coordinator) in childCoordinators.enumerated() {
-            if coordinator === child {
-                childCoordinators.remove(at: index)
-                break
-            }
-        }
     }
 
 }

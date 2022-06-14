@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1700DD96882D85416DB3D403 /* Pods_NFTMarket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66705B9EAE7B3638BF5523DA /* Pods_NFTMarket.framework */; };
+		1BB9501D4DD3D38638D0E080 /* Pods_NFTMarketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF63076B2976DCB0F8EBC16 /* Pods_NFTMarketTests.framework */; };
+		FAA69D71285920A300F5FD21 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA69D6F285920A300F5FD21 /* RegisterViewController.swift */; };
+		FAA69D72285920A300F5FD21 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA69D70285920A300F5FD21 /* RegisterViewController.xib */; };
+		FAA69D74285920B100F5FD21 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA69D73285920B100F5FD21 /* RegisterViewModel.swift */; };
+		FAA69D78285920E800F5FD21 /* ViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA69D77285920E800F5FD21 /* ViewModelProtocols.swift */; };
+		FAA69D7A2859218800F5FD21 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA69D792859218800F5FD21 /* RegisterCoordinator.swift */; };
+		FAA69D7C2859303B00F5FD21 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA69D7B2859303B00F5FD21 /* SplashCoordinator.swift */; };
 		FAD5B296285770960080E6AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B295285770960080E6AC /* AppDelegate.swift */; };
 		FAD5B298285770960080E6AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B297285770960080E6AC /* SceneDelegate.swift */; };
 		FAD5B2A0285770960080E6AC /* NFTMarket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B29E285770960080E6AC /* NFTMarket.xcdatamodeld */; };
@@ -27,6 +35,7 @@
 		FAD5B2E82857D2760080E6AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B2E72857D2760080E6AC /* ViewController.swift */; };
 		FAD5B2EB2857D6430080E6AC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B2EA2857D6430080E6AC /* AppCoordinator.swift */; };
 		FAD5B2EE2857E5410080E6AC /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B2ED2857E5410080E6AC /* TextFieldView.swift */; };
+		FDE0F9D26DA28224F1D8C3A9 /* Pods_NFTMarket_NFTMarketUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67E2FB4DDF76E4ADDDA2C07 /* Pods_NFTMarket_NFTMarketUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18736A68936E5AB308B0F128 /* Pods-NFTMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFTMarket.release.xcconfig"; path = "Target Support Files/Pods-NFTMarket/Pods-NFTMarket.release.xcconfig"; sourceTree = "<group>"; };
+		2068C3C15918940A12EBAFF0 /* Pods-NFTMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFTMarket.debug.xcconfig"; path = "Target Support Files/Pods-NFTMarket/Pods-NFTMarket.debug.xcconfig"; sourceTree = "<group>"; };
+		2FF18F896390D834813D8F89 /* Pods-NFTMarket-NFTMarketUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFTMarket-NFTMarketUITests.release.xcconfig"; path = "Target Support Files/Pods-NFTMarket-NFTMarketUITests/Pods-NFTMarket-NFTMarketUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3649E416B58AFF4CB79664E4 /* Pods-NFTMarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFTMarketTests.debug.xcconfig"; path = "Target Support Files/Pods-NFTMarketTests/Pods-NFTMarketTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66705B9EAE7B3638BF5523DA /* Pods_NFTMarket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFTMarket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B8294F244A41C1E0CD464E0 /* Pods-NFTMarket-NFTMarketUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFTMarket-NFTMarketUITests.debug.xcconfig"; path = "Target Support Files/Pods-NFTMarket-NFTMarketUITests/Pods-NFTMarket-NFTMarketUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A67E2FB4DDF76E4ADDDA2C07 /* Pods_NFTMarket_NFTMarketUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFTMarket_NFTMarketUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C065056B2990EABDB79DE79F /* Pods-NFTMarketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFTMarketTests.release.xcconfig"; path = "Target Support Files/Pods-NFTMarketTests/Pods-NFTMarketTests.release.xcconfig"; sourceTree = "<group>"; };
+		EFF63076B2976DCB0F8EBC16 /* Pods_NFTMarketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFTMarketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA69D6F285920A300F5FD21 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FAA69D70285920A300F5FD21 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		FAA69D73285920B100F5FD21 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		FAA69D77285920E800F5FD21 /* ViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocols.swift; sourceTree = "<group>"; };
+		FAA69D792859218800F5FD21 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		FAA69D7B2859303B00F5FD21 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		FAD5B292285770960080E6AC /* NFTMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD5B295285770960080E6AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD5B297285770960080E6AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1700DD96882D85416DB3D403 /* Pods_NFTMarket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB9501D4DD3D38638D0E080 /* Pods_NFTMarketTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +118,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDE0F9D26DA28224F1D8C3A9 /* Pods_NFTMarket_NFTMarketUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01EBB9266EF723BC5C76A196 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66705B9EAE7B3638BF5523DA /* Pods_NFTMarket.framework */,
+				A67E2FB4DDF76E4ADDDA2C07 /* Pods_NFTMarket_NFTMarketUITests.framework */,
+				EFF63076B2976DCB0F8EBC16 /* Pods_NFTMarketTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42C0FE4C614B8F6C6B3F1E60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2068C3C15918940A12EBAFF0 /* Pods-NFTMarket.debug.xcconfig */,
+				18736A68936E5AB308B0F128 /* Pods-NFTMarket.release.xcconfig */,
+				7B8294F244A41C1E0CD464E0 /* Pods-NFTMarket-NFTMarketUITests.debug.xcconfig */,
+				2FF18F896390D834813D8F89 /* Pods-NFTMarket-NFTMarketUITests.release.xcconfig */,
+				3649E416B58AFF4CB79664E4 /* Pods-NFTMarketTests.debug.xcconfig */,
+				C065056B2990EABDB79DE79F /* Pods-NFTMarketTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FAA69D6E2859209600F5FD21 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				FAA69D6F285920A300F5FD21 /* RegisterViewController.swift */,
+				FAA69D73285920B100F5FD21 /* RegisterViewModel.swift */,
+				FAA69D792859218800F5FD21 /* RegisterCoordinator.swift */,
+				FAA69D70285920A300F5FD21 /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		FAA69D75285920CC00F5FD21 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FAA69D76285920DB00F5FD21 /* ViewModel */,
+				FAD5B2E92857D6210080E6AC /* Coordinator */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FAA69D76285920DB00F5FD21 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAA69D77285920E800F5FD21 /* ViewModelProtocols.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FAD5B289285770960080E6AC = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +183,8 @@
 				FAD5B2AE285770980080E6AC /* NFTMarketTests */,
 				FAD5B2B8285770980080E6AC /* NFTMarketUITests */,
 				FAD5B293285770960080E6AC /* Products */,
+				42C0FE4C614B8F6C6B3F1E60 /* Pods */,
+				01EBB9266EF723BC5C76A196 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,7 +201,7 @@
 		FAD5B294285770960080E6AC /* NFTMarket */ = {
 			isa = PBXGroup;
 			children = (
-				FAD5B2E92857D6210080E6AC /* Coordinator */,
+				FAA69D75285920CC00F5FD21 /* Protocols */,
 				FAD5B2D7285791240080E6AC /* Extension */,
 				FAD5B2D0285777730080E6AC /* UIKitExtension */,
 				FAD5B2C9285772910080E6AC /* Feature */,
@@ -163,6 +243,7 @@
 		FAD5B2C9285772910080E6AC /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				FAA69D6E2859209600F5FD21 /* Register */,
 				FAD5B2CF285775EB0080E6AC /* Login */,
 				FAD5B2CA285772A30080E6AC /* Splash */,
 			);
@@ -173,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD5B2CB285772B80080E6AC /* SplashViewController.swift */,
+				FAA69D7B2859303B00F5FD21 /* SplashCoordinator.swift */,
 				FAD5B2E22857A8E60080E6AC /* SplashViewModel.swift */,
 				FAD5B2CC285772B80080E6AC /* SplashViewController.xib */,
 			);
@@ -247,9 +329,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAD5B2BF285770980080E6AC /* Build configuration list for PBXNativeTarget "NFTMarket" */;
 			buildPhases = (
+				B05C247CC838A27B52B4DB4F /* [CP] Check Pods Manifest.lock */,
 				FAD5B28E285770960080E6AC /* Sources */,
 				FAD5B28F285770960080E6AC /* Frameworks */,
 				FAD5B290285770960080E6AC /* Resources */,
+				97C6710B89B80BEA958B6B4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +348,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAD5B2C2285770980080E6AC /* Build configuration list for PBXNativeTarget "NFTMarketTests" */;
 			buildPhases = (
+				5F4B8D3029FF64458BDD1EE9 /* [CP] Check Pods Manifest.lock */,
 				FAD5B2A7285770980080E6AC /* Sources */,
 				FAD5B2A8285770980080E6AC /* Frameworks */,
 				FAD5B2A9285770980080E6AC /* Resources */,
@@ -282,9 +367,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAD5B2C5285770980080E6AC /* Build configuration list for PBXNativeTarget "NFTMarketUITests" */;
 			buildPhases = (
+				0DA738055A1DF6AAC7F549B7 /* [CP] Check Pods Manifest.lock */,
 				FAD5B2B1285770980080E6AC /* Sources */,
 				FAD5B2B2285770980080E6AC /* Frameworks */,
 				FAD5B2B3285770980080E6AC /* Resources */,
+				A270B6B5F02865C26BA5B904 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD5B2DD2857A5A80080E6AC /* LoginViewController.xib in Resources */,
+				FAA69D72285920A300F5FD21 /* RegisterViewController.xib in Resources */,
 				FAD5B2A5285770980080E6AC /* LaunchScreen.storyboard in Resources */,
 				FAD5B2A2285770980080E6AC /* Assets.xcassets in Resources */,
 				FAD5B2CE285772B80080E6AC /* SplashViewController.xib in Resources */,
@@ -367,21 +455,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DA738055A1DF6AAC7F549B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NFTMarket-NFTMarketUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F4B8D3029FF64458BDD1EE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NFTMarketTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97C6710B89B80BEA958B6B4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFTMarket/Pods-NFTMarket-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFTMarket/Pods-NFTMarket-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NFTMarket/Pods-NFTMarket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A270B6B5F02865C26BA5B904 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFTMarket-NFTMarketUITests/Pods-NFTMarket-NFTMarketUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFTMarket-NFTMarketUITests/Pods-NFTMarket-NFTMarketUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NFTMarket-NFTMarketUITests/Pods-NFTMarket-NFTMarketUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B05C247CC838A27B52B4DB4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NFTMarket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAD5B28E285770960080E6AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FAD5B2DC2857A5A80080E6AC /* LoginViewController.swift in Sources */,
+				FAA69D74285920B100F5FD21 /* RegisterViewModel.swift in Sources */,
 				FAD5B296285770960080E6AC /* AppDelegate.swift in Sources */,
 				FAD5B2EB2857D6430080E6AC /* AppCoordinator.swift in Sources */,
+				FAA69D78285920E800F5FD21 /* ViewModelProtocols.swift in Sources */,
 				FAD5B2EE2857E5410080E6AC /* TextFieldView.swift in Sources */,
 				FAD5B2A0285770960080E6AC /* NFTMarket.xcdatamodeld in Sources */,
 				FAD5B2D3285777960080E6AC /* PrimaryButton.swift in Sources */,
 				FAD5B2DF2857A6840080E6AC /* LoginViewModel.swift in Sources */,
 				FAD5B2E32857A8E60080E6AC /* SplashViewModel.swift in Sources */,
 				FAD5B2E82857D2760080E6AC /* ViewController.swift in Sources */,
+				FAA69D71285920A300F5FD21 /* RegisterViewController.swift in Sources */,
+				FAA69D7A2859218800F5FD21 /* RegisterCoordinator.swift in Sources */,
 				FAD5B2E12857A69C0080E6AC /* LoginCoordinator.swift in Sources */,
+				FAA69D7C2859303B00F5FD21 /* SplashCoordinator.swift in Sources */,
 				FAD5B2D928579AF00080E6AC /* String.swift in Sources */,
 				FAD5B298285770960080E6AC /* SceneDelegate.swift in Sources */,
 				FAD5B2CD285772B80080E6AC /* SplashViewController.swift in Sources */,
@@ -548,11 +744,13 @@
 		};
 		FAD5B2C0285770980080E6AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2068C3C15918940A12EBAFF0 /* Pods-NFTMarket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VPS9LBWQ55;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NFTMarket/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -574,11 +772,13 @@
 		};
 		FAD5B2C1285770980080E6AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18736A68936E5AB308B0F128 /* Pods-NFTMarket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VPS9LBWQ55;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NFTMarket/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -600,6 +800,7 @@
 		};
 		FAD5B2C3285770980080E6AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3649E416B58AFF4CB79664E4 /* Pods-NFTMarketTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -619,6 +820,7 @@
 		};
 		FAD5B2C4285770980080E6AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C065056B2990EABDB79DE79F /* Pods-NFTMarketTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -638,6 +840,7 @@
 		};
 		FAD5B2C6285770980080E6AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B8294F244A41C1E0CD464E0 /* Pods-NFTMarket-NFTMarketUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -655,6 +858,7 @@
 		};
 		FAD5B2C7285770980080E6AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FF18F896390D834813D8F89 /* Pods-NFTMarket-NFTMarketUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

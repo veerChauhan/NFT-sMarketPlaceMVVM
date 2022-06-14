@@ -21,8 +21,6 @@ final class PrimaryButton :UIButton {
             updateColors()
         }
     }
-    
-    
     @IBInspectable public var buttonTitle: String = "Primary Button" {
         didSet {
             self.setTitle(buttonTitle, for: .normal)
@@ -64,7 +62,7 @@ final class PrimaryButton :UIButton {
     }
     
     func configureButton() {
-        self.setTitleColor(.darkText, for: .normal)
+        self.setTitleColor(.white, for: .normal)
     }
     
 }

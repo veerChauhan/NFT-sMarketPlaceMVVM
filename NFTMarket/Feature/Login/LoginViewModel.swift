@@ -7,6 +7,7 @@
 
 import Foundation
 
-final class LoginViewModel {
-    
+final class LoginViewModel:ViewModelProtocol {
+    weak var loginCoordinator: LoginCoordinator?
+
 }

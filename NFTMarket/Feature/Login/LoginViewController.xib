@@ -3,12 +3,16 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="NFTMarket" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="Gl8-ma-Twg" id="nIW-WJ-4gn"/>
+                <outlet property="passwordTextField" destination="9FG-9D-O4e" id="ORW-11-a7a"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,7 +34,7 @@
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gl8-ma-Twg">
                             <rect key="frame" x="10" y="5" width="354" height="40"/>
                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,7 +57,7 @@
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9FG-9D-O4e">
                             <rect key="frame" x="10" y="5" width="354" height="40"/>
                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -71,14 +75,14 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91h-jp-YC8">
-                    <rect key="frame" x="25" y="543" width="200" height="40"/>
+                    <rect key="frame" x="25" y="543" width="150" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="nmM-dD-lHY"/>
-                        <constraint firstAttribute="width" constant="200" id="pNk-Cl-KZa"/>
+                        <constraint firstAttribute="width" constant="150" id="pNk-Cl-KZa"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Forgot Password">
+                    <state key="normal" title="Forgot Password ?">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
@@ -89,16 +93,48 @@
                     </constraints>
                     <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                            <color key="value" systemColor="systemCyanColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" systemColor="systemPurpleColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="buttonTitle" value="Register"/>
+                        <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                            <point key="value" x="0.5" y="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                            <point key="value" x="0.5" y="0.29999999999999999"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onClickRegister:" destination="-1" eventType="touchUpInside" id="Wvv-mj-LbF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5v-iX-Qge" customClass="PrimaryButton" customModule="NFTMarket" customModuleProvider="target">
+                    <rect key="frame" x="20" y="702" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="sXm-Jl-NxA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Login"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                            <color key="value" red="0.71635264160000001" green="0.81703287359999999" blue="0.96670049430000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="value" name="AccentColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                            <color key="value" red="0.82845079899999996" green="0.98002856969999996" blue="0.94102054830000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="value" name="Purple"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="buttonTitle" value="Login"/>
                         <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
@@ -114,6 +150,8 @@
             <color key="backgroundColor" red="0.035670701409999998" green="0.01677674614" blue="0.10088450459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="RFz-Hm-5kb" firstAttribute="top" secondItem="ljk-g0-QSo" secondAttribute="bottom" constant="10" id="2DH-4W-wWk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x5v-iX-Qge" secondAttribute="trailing" constant="20" id="83l-Wz-ZDQ"/>
+                <constraint firstItem="0UE-IN-7wz" firstAttribute="top" secondItem="x5v-iX-Qge" secondAttribute="bottom" constant="10" id="90W-gB-VCF"/>
                 <constraint firstItem="ljk-g0-QSo" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="CsQ-H7-0Yp"/>
                 <constraint firstItem="tFp-YM-cJM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="CwW-Ap-7vw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RFz-Hm-5kb" secondAttribute="trailing" constant="20" id="FNq-9g-c9g"/>
@@ -121,6 +159,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ljk-g0-QSo" secondAttribute="trailing" constant="20" id="HSd-Si-pke"/>
                 <constraint firstItem="RFz-Hm-5kb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="M4C-B6-CZU"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0UE-IN-7wz" secondAttribute="bottom" constant="50" id="PDK-5L-c9Z"/>
+                <constraint firstItem="x5v-iX-Qge" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="TtE-P9-hPl"/>
                 <constraint firstItem="91h-jp-YC8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="WdU-ej-kAG"/>
                 <constraint firstItem="ljk-g0-QSo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="dwc-W5-jaX"/>
                 <constraint firstItem="0UE-IN-7wz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="hDH-GP-fJQ"/>
@@ -132,13 +171,25 @@
     </objects>
     <designables>
         <designable name="0UE-IN-7wz">
-            <size key="intrinsicContentSize" width="55" height="33"/>
+            <size key="intrinsicContentSize" width="87" height="33"/>
         </designable>
-        <designable name="91h-jp-YC8">
-            <size key="intrinsicContentSize" width="127" height="29"/>
+        <designable name="x5v-iX-Qge">
+            <size key="intrinsicContentSize" width="55" height="33"/>
         </designable>
     </designables>
     <resources>
         <image name="Splash" width="498" height="790"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Purple">
+            <color red="0.6470588235294118" green="0.35294117647058826" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

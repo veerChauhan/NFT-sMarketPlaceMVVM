@@ -8,24 +8,43 @@
 import Foundation
 import UIKit
 
-class LoginCoordinator: Coordinator {
+protocol LoginRouter {
+    func onTapLogin()
+    func onTapRegister()
+}
+
+typealias LoginRouterCoordinator = Coordinator & LoginRouter
+
+class LoginCoordinator: LoginRouterCoordinator {
     
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     weak var parentCoordinator: MainCoordinator?
-
+    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-
+    
     func configure() {
         let viewmodel = LoginViewModel()
         let vc = LoginViewController(viewModel: viewmodel)
-        vc.loginCoordinator = self
+        vc.viewModel.loginCoordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
-
-    func didFinishBuying() {
+    
+    func didFinishLogin() {
         parentCoordinator?.childDidFinish(self)
     }
+    
+    func onTapLogin() {
+        
+    }
+    func onTapRegister(){
+        
+        let child = RegisterCoordinator(navigationController: navigationController)
+        child.parentCoordinator = self
+        childCoordinators.append(child)
+        child.configure()
+    }
+    
 }

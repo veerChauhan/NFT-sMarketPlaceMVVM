@@ -6,7 +6,11 @@
 //
 
 import Foundation
-final class SplashViewModel {
+final class SplashViewModel: ViewModelProtocol {
     
+    weak var cordinator: MainCoordinator?
+    
+    
+
 }
 
