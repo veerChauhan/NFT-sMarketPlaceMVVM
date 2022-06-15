@@ -26,6 +26,7 @@
 		FAAAF73B285A17F600369C3E /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF73A285A17F400369C3E /* FirebaseManager.swift */; };
 		FAAAF73D285A1A6900369C3E /* FirebaseAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF73C285A1A6900369C3E /* FirebaseAPITest.swift */; };
 		FAAAF741285A1B3600369C3E /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF740285A1B3600369C3E /* RegisterModel.swift */; };
+		FAAAF745285A7CF400369C3E /* ValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF744285A7CF400369C3E /* ValidatorProtocol.swift */; };
 		FAD5B296285770960080E6AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B295285770960080E6AC /* AppDelegate.swift */; };
 		FAD5B298285770960080E6AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B297285770960080E6AC /* SceneDelegate.swift */; };
 		FAD5B2A0285770960080E6AC /* NFTMarket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B29E285770960080E6AC /* NFTMarket.xcdatamodeld */; };
@@ -86,6 +87,7 @@
 		FAAAF73A285A17F400369C3E /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		FAAAF73C285A1A6900369C3E /* FirebaseAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPITest.swift; sourceTree = "<group>"; };
 		FAAAF740285A1B3600369C3E /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		FAAAF744285A7CF400369C3E /* ValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorProtocol.swift; sourceTree = "<group>"; };
 		FAD5B292285770960080E6AC /* NFTMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD5B295285770960080E6AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD5B297285770960080E6AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -223,6 +225,22 @@
 			path = RegisterScreen;
 			sourceTree = "<group>";
 		};
+		FAAAF742285A7CD700369C3E /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAF743285A7CE600369C3E /* Validator */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		FAAAF743285A7CE600369C3E /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAF744285A7CF400369C3E /* ValidatorProtocol.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
 		FAD5B289285770960080E6AC = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +266,7 @@
 		FAD5B294285770960080E6AC /* NFTMarket */ = {
 			isa = PBXGroup;
 			children = (
+				FAAAF742285A7CD700369C3E /* Factory */,
 				FAAAF73E285A1B0F00369C3E /* Model */,
 				FAAAF728285A137400369C3E /* Firebase */,
 				FAA69D75285920CC00F5FD21 /* Protocols */,
@@ -643,6 +662,7 @@
 				FAD5B2E12857A69C0080E6AC /* LoginCoordinator.swift in Sources */,
 				FAA69D7C2859303B00F5FD21 /* SplashCoordinator.swift in Sources */,
 				FAAAF741285A1B3600369C3E /* RegisterModel.swift in Sources */,
+				FAAAF745285A7CF400369C3E /* ValidatorProtocol.swift in Sources */,
 				FAD5B2D928579AF00080E6AC /* String.swift in Sources */,
 				FAD5B298285770960080E6AC /* SceneDelegate.swift in Sources */,
 				FAD5B2CD285772B80080E6AC /* SplashViewController.swift in Sources */,

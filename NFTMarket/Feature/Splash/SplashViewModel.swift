@@ -10,7 +10,9 @@ final class SplashViewModel: ViewModelProtocol {
     
     weak var cordinator: MainCoordinator?
     
-    
+    deinit {
+        print("Deinit")
+    }
 
 }
 

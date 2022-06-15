@@ -40,6 +40,4 @@ extension RegisterViewController : RegisterUserProtocol{
     func didFailUserRegister(with message: String) {
         print(message)
     }
-    
-    
 }
