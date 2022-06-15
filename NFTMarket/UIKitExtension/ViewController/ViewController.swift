@@ -12,10 +12,7 @@ class ViewController<ViewModelProtocol>: UIViewController, UITextFieldDelegate {
     var viewModel: ViewModelProtocol
     override func viewDidLoad() {
         super.viewDidLoad()
-
         view.keyboardLayoutGuide.followsUndockedKeyboard = true
-
-        // Do any additional setup after loading the view.
     }
     init(viewModel: ViewModelProtocol) {
         self.viewModel = viewModel
@@ -26,7 +23,6 @@ class ViewController<ViewModelProtocol>: UIViewController, UITextFieldDelegate {
         fatalError("init(coder:) has not been implemented")
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        textField.resignFirstResponder()
         return true
     }
 }

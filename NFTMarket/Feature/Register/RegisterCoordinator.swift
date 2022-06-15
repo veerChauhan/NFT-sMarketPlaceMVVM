@@ -18,8 +18,6 @@ class RegisterCoordinator:RegisterRouterCoordinator {
         parentCoordinator?.childDidFinish(self)
         self.navigationController.popViewController(animated: true)
     }
-    
-    
     var childCoordinators: [Coordinator] = [Coordinator]()
     
     var navigationController: UINavigationController

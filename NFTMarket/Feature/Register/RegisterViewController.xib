@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="NFTMarket" customModuleProvider="target">
             <connections>
+                <outlet property="confirmPasswordTF" destination="BBC-VK-zfW" id="7UN-Ki-vL3"/>
+                <outlet property="emailTF" destination="uRG-HX-4Rv" id="kKa-cU-JAU"/>
+                <outlet property="fullNameTF" destination="61x-wY-l5a" id="Dtx-gc-h6r"/>
+                <outlet property="passwordTF" destination="NXP-Wd-PQQ" id="F2X-FB-mCM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,8 +34,15 @@
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="61x-wY-l5a">
                             <rect key="frame" x="10" y="5" width="354" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" name="TextFieldPrimary"/>
                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,8 +64,14 @@
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uRG-HX-4Rv">
                             <rect key="frame" x="10" y="5" width="354" height="40"/>
+                            <color key="textColor" name="TextFieldPrimary"/>
                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,8 +93,14 @@
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NXP-Wd-PQQ">
                             <rect key="frame" x="10" y="5" width="354" height="40"/>
+                            <color key="textColor" name="TextFieldPrimary"/>
                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -99,8 +122,14 @@
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BBC-VK-zfW">
                             <rect key="frame" x="10" y="5" width="354" height="40"/>
+                            <color key="textColor" name="TextFieldPrimary"/>
                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -133,7 +162,7 @@
                             <color key="value" name="Purple"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                            <color key="value" name="AccentColor"/>
+                            <color key="value" systemColor="systemTealColor"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="buttonTitle" value="Register"/>
                         <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
@@ -143,6 +172,9 @@
                             <point key="value" x="0.5" y="0.29999999999999999"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onClickRegisterButton:" destination="-1" eventType="touchUpInside" id="v4f-4w-wui"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1v-ae-wPe">
                     <rect key="frame" x="0.0" y="44" width="50" height="50"/>
@@ -183,24 +215,24 @@
                 <constraint firstItem="40r-kq-3aY" firstAttribute="top" secondItem="NBk-Ar-SO8" secondAttribute="bottom" constant="10" id="wbI-cL-chA"/>
                 <constraint firstItem="Tey-te-ISe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="zDs-y1-H76"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="115"/>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </view>
     </objects>
     <designables>
         <designable name="AXq-Lm-Rki">
             <size key="intrinsicContentSize" width="87" height="33"/>
         </designable>
-        <designable name="v1v-ae-wPe">
-            <size key="intrinsicContentSize" width="30" height="25"/>
-        </designable>
     </designables>
     <resources>
         <image name="Splash" width="498" height="790"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Purple">
             <color red="0.6470588235294118" green="0.35294117647058826" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="TextFieldPrimary">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

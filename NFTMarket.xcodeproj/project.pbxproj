@@ -15,6 +15,17 @@
 		FAA69D78285920E800F5FD21 /* ViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA69D77285920E800F5FD21 /* ViewModelProtocols.swift */; };
 		FAA69D7A2859218800F5FD21 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA69D792859218800F5FD21 /* RegisterCoordinator.swift */; };
 		FAA69D7C2859303B00F5FD21 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA69D7B2859303B00F5FD21 /* SplashCoordinator.swift */; };
+		FAAAF72A285A138800369C3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAAF729285A138800369C3E /* GoogleService-Info.plist */; };
+		FAAAF72D285A160200369C3E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FAAAF72C285A160200369C3E /* FirebaseAnalytics */; };
+		FAAAF72F285A160200369C3E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FAAAF72E285A160200369C3E /* FirebaseAuth */; };
+		FAAAF731285A160200369C3E /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = FAAAF730285A160200369C3E /* FirebaseCrashlytics */; };
+		FAAAF733285A160200369C3E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FAAAF732285A160200369C3E /* FirebaseDatabase */; };
+		FAAAF735285A160200369C3E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FAAAF734285A160200369C3E /* FirebaseFirestore */; };
+		FAAAF737285A160200369C3E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = FAAAF736285A160200369C3E /* FirebaseMessaging */; };
+		FAAAF739285A160200369C3E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FAAAF738285A160200369C3E /* FirebaseStorage */; };
+		FAAAF73B285A17F600369C3E /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF73A285A17F400369C3E /* FirebaseManager.swift */; };
+		FAAAF73D285A1A6900369C3E /* FirebaseAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF73C285A1A6900369C3E /* FirebaseAPITest.swift */; };
+		FAAAF741285A1B3600369C3E /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF740285A1B3600369C3E /* RegisterModel.swift */; };
 		FAD5B296285770960080E6AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B295285770960080E6AC /* AppDelegate.swift */; };
 		FAD5B298285770960080E6AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B297285770960080E6AC /* SceneDelegate.swift */; };
 		FAD5B2A0285770960080E6AC /* NFTMarket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B29E285770960080E6AC /* NFTMarket.xcdatamodeld */; };
@@ -71,6 +82,10 @@
 		FAA69D77285920E800F5FD21 /* ViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocols.swift; sourceTree = "<group>"; };
 		FAA69D792859218800F5FD21 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		FAA69D7B2859303B00F5FD21 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		FAAAF729285A138800369C3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAAAF73A285A17F400369C3E /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		FAAAF73C285A1A6900369C3E /* FirebaseAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPITest.swift; sourceTree = "<group>"; };
+		FAAAF740285A1B3600369C3E /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		FAD5B292285770960080E6AC /* NFTMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD5B295285770960080E6AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD5B297285770960080E6AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,7 +117,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAAF733285A160200369C3E /* FirebaseDatabase in Frameworks */,
+				FAAAF72D285A160200369C3E /* FirebaseAnalytics in Frameworks */,
+				FAAAF737285A160200369C3E /* FirebaseMessaging in Frameworks */,
+				FAAAF731285A160200369C3E /* FirebaseCrashlytics in Frameworks */,
+				FAAAF72F285A160200369C3E /* FirebaseAuth in Frameworks */,
+				FAAAF739285A160200369C3E /* FirebaseStorage in Frameworks */,
 				1700DD96882D85416DB3D403 /* Pods_NFTMarket.framework in Frameworks */,
+				FAAAF735285A160200369C3E /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +198,31 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		FAAAF728285A137400369C3E /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAF729285A138800369C3E /* GoogleService-Info.plist */,
+				FAAAF73A285A17F400369C3E /* FirebaseManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		FAAAF73E285A1B0F00369C3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAF73F285A1B2400369C3E /* RegisterScreen */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAAAF73F285A1B2400369C3E /* RegisterScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FAAAF740285A1B3600369C3E /* RegisterModel.swift */,
+			);
+			path = RegisterScreen;
+			sourceTree = "<group>";
+		};
 		FAD5B289285770960080E6AC = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +248,8 @@
 		FAD5B294285770960080E6AC /* NFTMarket */ = {
 			isa = PBXGroup;
 			children = (
+				FAAAF73E285A1B0F00369C3E /* Model */,
+				FAAAF728285A137400369C3E /* Firebase */,
 				FAA69D75285920CC00F5FD21 /* Protocols */,
 				FAD5B2D7285791240080E6AC /* Extension */,
 				FAD5B2D0285777730080E6AC /* UIKitExtension */,
@@ -218,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD5B2AF285770980080E6AC /* NFTMarketTests.swift */,
+				FAAAF73C285A1A6900369C3E /* FirebaseAPITest.swift */,
 			);
 			path = NFTMarketTests;
 			sourceTree = "<group>";
@@ -340,6 +390,15 @@
 			dependencies = (
 			);
 			name = NFTMarket;
+			packageProductDependencies = (
+				FAAAF72C285A160200369C3E /* FirebaseAnalytics */,
+				FAAAF72E285A160200369C3E /* FirebaseAuth */,
+				FAAAF730285A160200369C3E /* FirebaseCrashlytics */,
+				FAAAF732285A160200369C3E /* FirebaseDatabase */,
+				FAAAF734285A160200369C3E /* FirebaseFirestore */,
+				FAAAF736285A160200369C3E /* FirebaseMessaging */,
+				FAAAF738285A160200369C3E /* FirebaseStorage */,
+			);
 			productName = NFTMarket;
 			productReference = FAD5B292285770960080E6AC /* NFTMarket.app */;
 			productType = "com.apple.product-type.application";
@@ -415,6 +474,9 @@
 				Base,
 			);
 			mainGroup = FAD5B289285770960080E6AC;
+			packageReferences = (
+				FAAAF72B285A160200369C3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FAD5B293285770960080E6AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -436,6 +498,7 @@
 				FAD5B2A5285770980080E6AC /* LaunchScreen.storyboard in Resources */,
 				FAD5B2A2285770980080E6AC /* Assets.xcassets in Resources */,
 				FAD5B2CE285772B80080E6AC /* SplashViewController.xib in Resources */,
+				FAAAF72A285A138800369C3E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,12 +635,14 @@
 				FAD5B2A0285770960080E6AC /* NFTMarket.xcdatamodeld in Sources */,
 				FAD5B2D3285777960080E6AC /* PrimaryButton.swift in Sources */,
 				FAD5B2DF2857A6840080E6AC /* LoginViewModel.swift in Sources */,
+				FAAAF73B285A17F600369C3E /* FirebaseManager.swift in Sources */,
 				FAD5B2E32857A8E60080E6AC /* SplashViewModel.swift in Sources */,
 				FAD5B2E82857D2760080E6AC /* ViewController.swift in Sources */,
 				FAA69D71285920A300F5FD21 /* RegisterViewController.swift in Sources */,
 				FAA69D7A2859218800F5FD21 /* RegisterCoordinator.swift in Sources */,
 				FAD5B2E12857A69C0080E6AC /* LoginCoordinator.swift in Sources */,
 				FAA69D7C2859303B00F5FD21 /* SplashCoordinator.swift in Sources */,
+				FAAAF741285A1B3600369C3E /* RegisterModel.swift in Sources */,
 				FAD5B2D928579AF00080E6AC /* String.swift in Sources */,
 				FAD5B298285770960080E6AC /* SceneDelegate.swift in Sources */,
 				FAD5B2CD285772B80080E6AC /* SplashViewController.swift in Sources */,
@@ -589,6 +654,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD5B2B0285770980080E6AC /* NFTMarketTests.swift in Sources */,
+				FAAAF73D285A1A6900369C3E /* FirebaseAPITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,6 +821,7 @@
 				INFOPLIST_FILE = NFTMarket/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -783,6 +850,7 @@
 				INFOPLIST_FILE = NFTMarket/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -914,6 +982,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FAAAF72B285A160200369C3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAAAF72C285A160200369C3E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAAAF72B285A160200369C3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		FAAAF72E285A160200369C3E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAAAF72B285A160200369C3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FAAAF730285A160200369C3E /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAAAF72B285A160200369C3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		FAAAF732285A160200369C3E /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAAAF72B285A160200369C3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		FAAAF734285A160200369C3E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAAAF72B285A160200369C3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FAAAF736285A160200369C3E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAAAF72B285A160200369C3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		FAAAF738285A160200369C3E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAAAF72B285A160200369C3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FAD5B29E285770960080E6AC /* NFTMarket.xcdatamodeld */ = {
