@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		1700DD96882D85416DB3D403 /* Pods_NFTMarket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66705B9EAE7B3638BF5523DA /* Pods_NFTMarket.framework */; };
 		1BB9501D4DD3D38638D0E080 /* Pods_NFTMarketTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF63076B2976DCB0F8EBC16 /* Pods_NFTMarketTests.framework */; };
+		FA1AC96229717B6D002C075B /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AC96129717B6D002C075B /* StringConstants.swift */; };
+		FA1AC96429717F16002C075B /* ValidatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AC96329717F16002C075B /* ValidatorType.swift */; };
+		FA1AC96629717F30002C075B /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AC96529717F30002C075B /* ValidationError.swift */; };
+		FA1AC96829717F84002C075B /* ValidatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AC96729717F84002C075B /* ValidatorFactory.swift */; };
+		FA1AC96A29717FB0002C075B /* ValidatorResultFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AC96929717FB0002C075B /* ValidatorResultFactory.swift */; };
 		FAA69D71285920A300F5FD21 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA69D6F285920A300F5FD21 /* RegisterViewController.swift */; };
 		FAA69D72285920A300F5FD21 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA69D70285920A300F5FD21 /* RegisterViewController.xib */; };
 		FAA69D74285920B100F5FD21 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA69D73285920B100F5FD21 /* RegisterViewModel.swift */; };
@@ -26,7 +31,7 @@
 		FAAAF73B285A17F600369C3E /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF73A285A17F400369C3E /* FirebaseManager.swift */; };
 		FAAAF73D285A1A6900369C3E /* FirebaseAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF73C285A1A6900369C3E /* FirebaseAPITest.swift */; };
 		FAAAF741285A1B3600369C3E /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF740285A1B3600369C3E /* RegisterModel.swift */; };
-		FAAAF745285A7CF400369C3E /* ValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF744285A7CF400369C3E /* ValidatorProtocol.swift */; };
+		FAAAF745285A7CF400369C3E /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF744285A7CF400369C3E /* Validator.swift */; };
 		FAD5B296285770960080E6AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B295285770960080E6AC /* AppDelegate.swift */; };
 		FAD5B298285770960080E6AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B297285770960080E6AC /* SceneDelegate.swift */; };
 		FAD5B2A0285770960080E6AC /* NFTMarket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B29E285770960080E6AC /* NFTMarket.xcdatamodeld */; };
@@ -77,6 +82,11 @@
 		A67E2FB4DDF76E4ADDDA2C07 /* Pods_NFTMarket_NFTMarketUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFTMarket_NFTMarketUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C065056B2990EABDB79DE79F /* Pods-NFTMarketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFTMarketTests.release.xcconfig"; path = "Target Support Files/Pods-NFTMarketTests/Pods-NFTMarketTests.release.xcconfig"; sourceTree = "<group>"; };
 		EFF63076B2976DCB0F8EBC16 /* Pods_NFTMarketTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFTMarketTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1AC96129717B6D002C075B /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		FA1AC96329717F16002C075B /* ValidatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorType.swift; sourceTree = "<group>"; };
+		FA1AC96529717F30002C075B /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		FA1AC96729717F84002C075B /* ValidatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorFactory.swift; sourceTree = "<group>"; };
+		FA1AC96929717FB0002C075B /* ValidatorResultFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorResultFactory.swift; sourceTree = "<group>"; };
 		FAA69D6F285920A300F5FD21 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FAA69D70285920A300F5FD21 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		FAA69D73285920B100F5FD21 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
@@ -87,7 +97,7 @@
 		FAAAF73A285A17F400369C3E /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		FAAAF73C285A1A6900369C3E /* FirebaseAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPITest.swift; sourceTree = "<group>"; };
 		FAAAF740285A1B3600369C3E /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
-		FAAAF744285A7CF400369C3E /* ValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorProtocol.swift; sourceTree = "<group>"; };
+		FAAAF744285A7CF400369C3E /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		FAD5B292285770960080E6AC /* NFTMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD5B295285770960080E6AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD5B297285770960080E6AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +182,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FA1AC96029717B5F002C075B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FA1AC96129717B6D002C075B /* StringConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		FAA69D6E2859209600F5FD21 /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,7 +254,11 @@
 		FAAAF743285A7CE600369C3E /* Validator */ = {
 			isa = PBXGroup;
 			children = (
-				FAAAF744285A7CF400369C3E /* ValidatorProtocol.swift */,
+				FAAAF744285A7CF400369C3E /* Validator.swift */,
+				FA1AC96529717F30002C075B /* ValidationError.swift */,
+				FA1AC96329717F16002C075B /* ValidatorType.swift */,
+				FA1AC96729717F84002C075B /* ValidatorFactory.swift */,
+				FA1AC96929717FB0002C075B /* ValidatorResultFactory.swift */,
 			);
 			path = Validator;
 			sourceTree = "<group>";
@@ -266,6 +288,7 @@
 		FAD5B294285770960080E6AC /* NFTMarket */ = {
 			isa = PBXGroup;
 			children = (
+				FA1AC96029717B5F002C075B /* Constants */,
 				FAAAF742285A7CD700369C3E /* Factory */,
 				FAAAF73E285A1B0F00369C3E /* Model */,
 				FAAAF728285A137400369C3E /* Firebase */,
@@ -647,22 +670,27 @@
 			files = (
 				FAD5B2DC2857A5A80080E6AC /* LoginViewController.swift in Sources */,
 				FAA69D74285920B100F5FD21 /* RegisterViewModel.swift in Sources */,
+				FA1AC96A29717FB0002C075B /* ValidatorResultFactory.swift in Sources */,
 				FAD5B296285770960080E6AC /* AppDelegate.swift in Sources */,
 				FAD5B2EB2857D6430080E6AC /* AppCoordinator.swift in Sources */,
 				FAA69D78285920E800F5FD21 /* ViewModelProtocols.swift in Sources */,
 				FAD5B2EE2857E5410080E6AC /* TextFieldView.swift in Sources */,
 				FAD5B2A0285770960080E6AC /* NFTMarket.xcdatamodeld in Sources */,
 				FAD5B2D3285777960080E6AC /* PrimaryButton.swift in Sources */,
+				FA1AC96629717F30002C075B /* ValidationError.swift in Sources */,
+				FA1AC96429717F16002C075B /* ValidatorType.swift in Sources */,
 				FAD5B2DF2857A6840080E6AC /* LoginViewModel.swift in Sources */,
 				FAAAF73B285A17F600369C3E /* FirebaseManager.swift in Sources */,
 				FAD5B2E32857A8E60080E6AC /* SplashViewModel.swift in Sources */,
 				FAD5B2E82857D2760080E6AC /* ViewController.swift in Sources */,
+				FA1AC96229717B6D002C075B /* StringConstants.swift in Sources */,
 				FAA69D71285920A300F5FD21 /* RegisterViewController.swift in Sources */,
+				FA1AC96829717F84002C075B /* ValidatorFactory.swift in Sources */,
 				FAA69D7A2859218800F5FD21 /* RegisterCoordinator.swift in Sources */,
 				FAD5B2E12857A69C0080E6AC /* LoginCoordinator.swift in Sources */,
 				FAA69D7C2859303B00F5FD21 /* SplashCoordinator.swift in Sources */,
 				FAAAF741285A1B3600369C3E /* RegisterModel.swift in Sources */,
-				FAAAF745285A7CF400369C3E /* ValidatorProtocol.swift in Sources */,
+				FAAAF745285A7CF400369C3E /* Validator.swift in Sources */,
 				FAD5B2D928579AF00080E6AC /* String.swift in Sources */,
 				FAD5B298285770960080E6AC /* SceneDelegate.swift in Sources */,
 				FAD5B2CD285772B80080E6AC /* SplashViewController.swift in Sources */,

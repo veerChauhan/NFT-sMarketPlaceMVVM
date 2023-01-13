@@ -6,3 +6,23 @@
 //
 
 import Foundation
+
+
+protocol StringConstantDescription {
+    var description: String {get}
+}
+enum StringConstants: StringConstantDescription {
+    case appName
+    case ok
+    
+    var description: String {
+        switch self {
+        case .appName:
+            return "NFT MarketPlace"
+        case .ok:
+            return "Ok"
+        }
+    }
+}
+
+

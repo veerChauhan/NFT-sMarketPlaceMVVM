@@ -7,21 +7,45 @@
 
 import Foundation
 
-protocol RegisterUserProtocol: AnyObject {
+protocol RegisterUserPresenterProtocol: AnyObject {
     func didRegisterUser(with UserInfo: UserInfo)
     func didFailUserRegister(with message: String)
 }
 
-final class RegisterViewModel:ViewModelProtocol {
+
+protocol RegisterViewModelInteractorProtocol: ViewModelProtocol {
+    func onClickRegister(email: String, password: String, confirmPassword: String)
+    init(accountManager: FirebaseAccountManger )
+
+}
+
+
+typealias RegisterViewModelProtocols = ViewModelProtocol & RegisterViewModelInteractorProtocol
+final class RegisterViewModel:RegisterViewModelProtocols {
     
-    weak var registerDelegate: RegisterUserProtocol?
+    weak var registerDelegate: RegisterUserPresenterProtocol?
     weak var coordinator: RegisterCoordinator?
-    private let firebaseManager = FirebaseManger.sharedManager
+    private var accountManager: FirebaseAccountManger
+    init(accountManager: FirebaseAccountManger) {
+        self.accountManager = accountManager
+    }
     var showIndicator: Bool = false
     
-    func onClickRegister(email: String, password: String) {
+    func onClickRegister(email: String, password: String, confirmPassword: String) {
         
-        firebaseManager.registerUser(with: email, _Password: password) { [weak self] registerResult in
+        do {
+           try validateRegisterationRequest(with: email, _Password: password, _ConfirmPassword: confirmPassword)
+            self.registerUser(email: email, password: password)
+        }
+        catch (let error){
+            let validationError = error as? ValidationError
+            self.registerDelegate?.didFailUserRegister(with: validationError?.message ?? "")
+        }
+    }
+    
+    
+    private func registerUser(email: String, password: String){
+        accountManager.registerUser(with: email, _Password: password) { [weak self] registerResult in
             switch registerResult {
             case .success(let result):
                 print(result)
@@ -34,6 +58,15 @@ final class RegisterViewModel:ViewModelProtocol {
                 self?.registerDelegate?.didFailUserRegister(with: error.errorDescription)
             }
         }
+    }
+    
+    private func validateRegisterationRequest(with _Email: String, _Password: String, _ConfirmPassword: String) throws {
+        let emailValidator =  Validator(input: _Email, validationType: .email)
+        try emailValidator.validatedText()
+        let passwordValidator = Validator(input: _Password, validationType: .password)
+        try passwordValidator.validatedText()
+        let matchPasswordValidator = MatchFieldValidator("Password", _ConfirmPassword)
+        try matchPasswordValidator.validated(_Password)
     }
 }
 

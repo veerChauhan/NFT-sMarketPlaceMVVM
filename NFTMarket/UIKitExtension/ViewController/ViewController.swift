@@ -25,4 +25,11 @@ class ViewController<ViewModelProtocol>: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         return true
     }
+    
+    func showBasicAlert(with message: String){
+        let alertController = UIAlertController(title: StringConstants.appName.description, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: StringConstants.ok.description, style: .default)
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true)
+    }
 }

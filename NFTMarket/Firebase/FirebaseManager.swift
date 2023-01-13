@@ -10,7 +10,7 @@ import FirebaseAuth
 import Firebase
 
 
-final class FirebaseManger {
+final class FirebaseAccountManger {
     
     enum FirebaseAPIError: Error, LocalizedError {
         
@@ -41,9 +41,6 @@ final class FirebaseManger {
             }
         }
     }
-    
-    static let sharedManager = FirebaseManger()
-    private init(){}
     
     
     func registerUser(with _Email: String, _Password: String,

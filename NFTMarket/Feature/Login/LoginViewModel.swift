@@ -8,27 +8,37 @@
 import Foundation
 
 
-protocol LoginProtocol: AnyObject {
+protocol LoginPresenterProtocol: AnyObject {
     func didLoginSucessFully(with user: UserInfo)
     func didFailToLogin(with errorMessage: String)
 }
 
-final class LoginViewModel:ViewModelProtocol {
-    
-    
-    weak var loginCoordinator: LoginCoordinator?
-    weak var loginDelegate: LoginProtocol?
+protocol loginInteractorProtocol {
+    func login(with _Email: String, _Password: String)
+}
 
-    init(){
-        print("Init")
+typealias LoginViewModelProtocols = ViewModelProtocol & loginInteractorProtocol
+
+
+final class LoginViewModel:LoginViewModelProtocols {
+    
+    
+    private var accountManager: FirebaseAccountManger
+    weak var loginCoordinator: LoginCoordinator?
+    weak var loginDelegate: LoginPresenterProtocol?
+    
+    init(accountManager: FirebaseAccountManger) {
+        self.accountManager = accountManager
     }
+    
+    
     func login(with _Email: String, _Password: String) {
         
         do {
             
             try validateLoginRequest(with: _Email, _Password: _Password)
             
-            FirebaseManger.sharedManager.userLogin(with: _Email, _Passwod: _Password) { [weak self] loginResult in
+            accountManager.userLogin(with: _Email, _Passwod: _Password) { [weak self] loginResult in
                 switch loginResult {
                 case .success(let result):
                     print(result)
@@ -43,13 +53,14 @@ final class LoginViewModel:ViewModelProtocol {
             }
         }
         catch {
-            let error = error as! ValidationError
-            print(error.message)
+            let error = error as? ValidationError
+            self.loginDelegate?.didFailToLogin(with: error?.message ?? "")
+            print(error?.message ?? "error not found")
         }
     }
     
     
-    func validateLoginRequest(with _Email: String, _Password: String) throws {
+    private func validateLoginRequest(with _Email: String, _Password: String) throws {
         let emailValidator =  Validator(input: _Email, validationType: .email)
         try emailValidator.validatedText()
         let passwordValidator = Validator(input: _Password, validationType: .password)

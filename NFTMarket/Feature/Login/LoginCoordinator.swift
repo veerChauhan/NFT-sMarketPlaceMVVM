@@ -26,7 +26,7 @@ class LoginCoordinator: LoginRouterCoordinator {
     }
     
     func configure() {
-        let viewmodel = LoginViewModel()
+        let viewmodel = LoginViewModel(accountManager: FirebaseAccountManger())
         let vc = LoginViewController(viewModel: viewmodel)
         vc.viewModel.loginCoordinator = self
         navigationController.pushViewController(vc, animated: true)

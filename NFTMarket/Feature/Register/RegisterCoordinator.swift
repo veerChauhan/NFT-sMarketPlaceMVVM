@@ -16,7 +16,7 @@ typealias RegisterRouterCoordinator = RegisterRouter & Coordinator
 class RegisterCoordinator:RegisterRouterCoordinator {
     func onTapBack() {
         parentCoordinator?.childDidFinish(self)
-        self.navigationController.popViewController(animated: true)
+        self.navigationController.popViewController(animated: false)
     }
     var childCoordinators: [Coordinator] = [Coordinator]()
     
@@ -28,9 +28,9 @@ class RegisterCoordinator:RegisterRouterCoordinator {
         self.navigationController = navigationController
     }
     func configure() {
-        let viewModel = RegisterViewModel()
+        let viewModel = RegisterViewModel(accountManager: FirebaseAccountManger())
         let registerScreen = RegisterViewController(viewModel: viewModel)
         registerScreen.viewModel.coordinator = self
-        navigationController.pushViewController(registerScreen, animated: true)
+        navigationController.pushViewController(registerScreen, animated: false)
     }
 }

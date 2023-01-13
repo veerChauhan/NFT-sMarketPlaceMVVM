@@ -6,3 +6,11 @@
 //
 
 import Foundation
+enum ValidatorType {
+    case email
+    case password
+    case username
+    case mobile
+    case requiredField(field: String)
+    case matchField(fieldName: String, secoundField: String)
+}

@@ -14,7 +14,6 @@
             <connections>
                 <outlet property="confirmPasswordTF" destination="BBC-VK-zfW" id="7UN-Ki-vL3"/>
                 <outlet property="emailTF" destination="uRG-HX-4Rv" id="kKa-cU-JAU"/>
-                <outlet property="fullNameTF" destination="61x-wY-l5a" id="Dtx-gc-h6r"/>
                 <outlet property="passwordTF" destination="NXP-Wd-PQQ" id="F2X-FB-mCM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -28,7 +27,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpT-rq-aKH">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="680"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="630"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="aIf-bE-MiA">
                                     <rect key="frame" x="35" y="0.0" width="250" height="350"/>
@@ -37,44 +36,14 @@
                                         <constraint firstAttribute="height" constant="350" id="duo-aI-zWo"/>
                                     </constraints>
                                 </imageView>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBk-Ar-SO8" customClass="TextFieldView" customModule="NFTMarket" customModuleProvider="target">
-                                    <rect key="frame" x="10" y="360" width="300" height="50"/>
-                                    <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="61x-wY-l5a">
-                                            <rect key="frame" x="10" y="5" width="280" height="40"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="textColor" name="TextFieldPrimary"/>
-                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </textField>
-                                    </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstItem="61x-wY-l5a" firstAttribute="top" secondItem="NBk-Ar-SO8" secondAttribute="top" constant="5" id="3dz-sn-ig3"/>
-                                        <constraint firstItem="61x-wY-l5a" firstAttribute="leading" secondItem="NBk-Ar-SO8" secondAttribute="leading" constant="10" id="EAS-3z-zdt"/>
-                                        <constraint firstAttribute="height" constant="50" id="O3e-tY-e59"/>
-                                        <constraint firstAttribute="bottom" secondItem="61x-wY-l5a" secondAttribute="bottom" constant="5" id="QbP-ot-0xB"/>
-                                        <constraint firstAttribute="trailing" secondItem="61x-wY-l5a" secondAttribute="trailing" constant="10" id="aF3-Fu-rBh"/>
-                                    </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="5"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40r-kq-3aY" customClass="TextFieldView" customModule="NFTMarket" customModuleProvider="target">
-                                    <rect key="frame" x="10" y="420" width="300" height="50"/>
+                                    <rect key="frame" x="10" y="370" width="300" height="50"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uRG-HX-4Rv">
                                             <rect key="frame" x="10" y="5" width="280" height="40"/>
                                             <color key="textColor" name="TextFieldPrimary"/>
                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                     <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,13 +66,13 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WT0-jX-BDx" customClass="TextFieldView" customModule="NFTMarket" customModuleProvider="target">
-                                    <rect key="frame" x="10" y="480" width="300" height="50"/>
+                                    <rect key="frame" x="10" y="430" width="300" height="50"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NXP-Wd-PQQ">
                                             <rect key="frame" x="10" y="5" width="280" height="40"/>
                                             <color key="textColor" name="TextFieldPrimary"/>
                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                     <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -126,13 +95,13 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tey-te-ISe" customClass="TextFieldView" customModule="NFTMarket" customModuleProvider="target">
-                                    <rect key="frame" x="10" y="540" width="300" height="50"/>
+                                    <rect key="frame" x="10" y="490" width="300" height="50"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BBC-VK-zfW">
                                             <rect key="frame" x="10" y="5" width="280" height="40"/>
                                             <color key="textColor" name="TextFieldPrimary"/>
                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                     <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -155,7 +124,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXq-Lm-Rki" customClass="PrimaryButton" customModule="NFTMarket" customModuleProvider="target">
-                                    <rect key="frame" x="10" y="610" width="300" height="50"/>
+                                    <rect key="frame" x="10" y="560" width="300" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="N6a-SQ-qoQ"/>
                                     </constraints>
@@ -207,22 +176,19 @@
                                 <constraint firstItem="aIf-bE-MiA" firstAttribute="centerX" secondItem="hpT-rq-aKH" secondAttribute="centerX" id="6vu-TW-jOT"/>
                                 <constraint firstItem="WT0-jX-BDx" firstAttribute="top" secondItem="40r-kq-3aY" secondAttribute="bottom" constant="10" id="8LD-rc-ifW"/>
                                 <constraint firstAttribute="trailing" secondItem="40r-kq-3aY" secondAttribute="trailing" constant="10" id="B7e-Vt-fTq"/>
-                                <constraint firstItem="40r-kq-3aY" firstAttribute="top" secondItem="NBk-Ar-SO8" secondAttribute="bottom" constant="10" id="BmU-Sm-8ps"/>
                                 <constraint firstAttribute="trailing" secondItem="AXq-Lm-Rki" secondAttribute="trailing" constant="10" id="E3w-iF-tJA"/>
                                 <constraint firstItem="Tey-te-ISe" firstAttribute="top" secondItem="WT0-jX-BDx" secondAttribute="bottom" constant="10" id="Lg2-QV-jMf"/>
                                 <constraint firstItem="WT0-jX-BDx" firstAttribute="leading" secondItem="hpT-rq-aKH" secondAttribute="leading" constant="10" id="Nev-1I-num"/>
                                 <constraint firstItem="AXq-Lm-Rki" firstAttribute="top" secondItem="Tey-te-ISe" secondAttribute="bottom" constant="20" id="Rut-bm-XQo"/>
                                 <constraint firstItem="v1v-ae-wPe" firstAttribute="leading" secondItem="hpT-rq-aKH" secondAttribute="leading" constant="10" id="ZWp-sb-Yea"/>
                                 <constraint firstItem="aIf-bE-MiA" firstAttribute="top" secondItem="hpT-rq-aKH" secondAttribute="top" id="bH3-dK-kNY"/>
-                                <constraint firstItem="NBk-Ar-SO8" firstAttribute="leading" secondItem="hpT-rq-aKH" secondAttribute="leading" constant="10" id="dSz-Nq-T3n"/>
                                 <constraint firstAttribute="bottom" secondItem="AXq-Lm-Rki" secondAttribute="bottom" constant="20" id="gJz-J9-UMI"/>
                                 <constraint firstAttribute="trailing" secondItem="Tey-te-ISe" secondAttribute="trailing" constant="10" id="gjT-uj-Cf6"/>
                                 <constraint firstItem="v1v-ae-wPe" firstAttribute="top" secondItem="hpT-rq-aKH" secondAttribute="top" constant="10" id="huD-cv-UoO"/>
+                                <constraint firstItem="40r-kq-3aY" firstAttribute="top" secondItem="aIf-bE-MiA" secondAttribute="bottom" constant="20" id="lKt-yw-lE3"/>
                                 <constraint firstItem="40r-kq-3aY" firstAttribute="leading" secondItem="hpT-rq-aKH" secondAttribute="leading" constant="10" id="pfw-GZ-Wc0"/>
                                 <constraint firstAttribute="trailing" secondItem="WT0-jX-BDx" secondAttribute="trailing" constant="10" id="r1w-KU-bLC"/>
                                 <constraint firstAttribute="height" priority="250" constant="800" id="rDY-Jb-ZV0"/>
-                                <constraint firstAttribute="trailing" secondItem="NBk-Ar-SO8" secondAttribute="trailing" constant="10" id="v9S-Sx-bYe"/>
-                                <constraint firstItem="NBk-Ar-SO8" firstAttribute="top" secondItem="aIf-bE-MiA" secondAttribute="bottom" constant="10" id="vuc-uO-lzj"/>
                             </constraints>
                         </view>
                     </subviews>

@@ -27,14 +27,16 @@ class LoginViewController: ViewController<LoginViewModel> {
     }
 }
 
-extension LoginViewController: LoginProtocol {
+extension LoginViewController: LoginPresenterProtocol {
     func didLoginSucessFully(with user: UserInfo) {
         print(user.userEmail)
         print(user.userToken)
+        self.showBasicAlert(with: "Login Successful")
     }
     
     func didFailToLogin(with errorMessage: String) {
         print("error ", errorMessage.description)
+        self.showBasicAlert(with: errorMessage)
     }
     
     
