@@ -23,22 +23,8 @@ class Validator {
         try factory.validated(self.userInput)
     }
 }
-enum ValidatorType {
-    case email
-    case password
-    case username
-    case mobile
-    case requiredField(field: String)
-}
 
-class ValidationError: Error {
-    
-    var message: String
-    
-    init(_ message: String) {
-        self.message = message
-    }
-}
+
 
 protocol ValidatorConvertibleProtocol {
     
@@ -104,6 +90,8 @@ class RequiredFieldValidator:ValidatorConvertibleProtocol {
     
 }
 
+class
+
 enum ValidatorFactory {
     
     static func validate(with _type: ValidatorType) -> ValidatorConvertibleProtocol {
@@ -118,6 +106,8 @@ enum ValidatorFactory {
         case .mobile:
             return MobileNumberValidator()
         case .requiredField(let fieldName): return RequiredFieldValidator(fieldName)
+        case .matchField(fieldName: let fieldName):
+            <#code#>
         }
     }
 }
