@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,201 +21,227 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="aIf-bE-MiA">
-                    <rect key="frame" x="82" y="44" width="250" height="350"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="250" id="854-6s-bae"/>
-                        <constraint firstAttribute="height" constant="350" id="duo-aI-zWo"/>
-                    </constraints>
-                </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBk-Ar-SO8" customClass="TextFieldView" customModule="NFTMarket" customModuleProvider="target">
-                    <rect key="frame" x="20" y="423" width="374" height="50"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9g-vW-5xy">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="61x-wY-l5a">
-                            <rect key="frame" x="10" y="5" width="354" height="40"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="textColor" name="TextFieldPrimary"/>
-                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpT-rq-aKH">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="680"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="aIf-bE-MiA">
+                                    <rect key="frame" x="35" y="0.0" width="250" height="350"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="250" id="854-6s-bae"/>
+                                        <constraint firstAttribute="height" constant="350" id="duo-aI-zWo"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBk-Ar-SO8" customClass="TextFieldView" customModule="NFTMarket" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="360" width="300" height="50"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="61x-wY-l5a">
+                                            <rect key="frame" x="10" y="5" width="280" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" name="TextFieldPrimary"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="61x-wY-l5a" firstAttribute="top" secondItem="NBk-Ar-SO8" secondAttribute="top" constant="5" id="3dz-sn-ig3"/>
+                                        <constraint firstItem="61x-wY-l5a" firstAttribute="leading" secondItem="NBk-Ar-SO8" secondAttribute="leading" constant="10" id="EAS-3z-zdt"/>
+                                        <constraint firstAttribute="height" constant="50" id="O3e-tY-e59"/>
+                                        <constraint firstAttribute="bottom" secondItem="61x-wY-l5a" secondAttribute="bottom" constant="5" id="QbP-ot-0xB"/>
+                                        <constraint firstAttribute="trailing" secondItem="61x-wY-l5a" secondAttribute="trailing" constant="10" id="aF3-Fu-rBh"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40r-kq-3aY" customClass="TextFieldView" customModule="NFTMarket" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="420" width="300" height="50"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uRG-HX-4Rv">
+                                            <rect key="frame" x="10" y="5" width="280" height="40"/>
+                                            <color key="textColor" name="TextFieldPrimary"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="uRG-HX-4Rv" secondAttribute="bottom" constant="5" id="1EK-sY-JD3"/>
+                                        <constraint firstItem="uRG-HX-4Rv" firstAttribute="top" secondItem="40r-kq-3aY" secondAttribute="top" constant="5" id="S9H-gB-jpJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="uRG-HX-4Rv" secondAttribute="trailing" constant="10" id="XNt-g4-XHK"/>
+                                        <constraint firstAttribute="height" constant="50" id="dJe-mP-Qx1"/>
+                                        <constraint firstItem="uRG-HX-4Rv" firstAttribute="leading" secondItem="40r-kq-3aY" secondAttribute="leading" constant="10" id="kM2-ft-qk4"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WT0-jX-BDx" customClass="TextFieldView" customModule="NFTMarket" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="480" width="300" height="50"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NXP-Wd-PQQ">
+                                            <rect key="frame" x="10" y="5" width="280" height="40"/>
+                                            <color key="textColor" name="TextFieldPrimary"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="NXP-Wd-PQQ" secondAttribute="bottom" constant="5" id="IYB-mP-8Ey"/>
+                                        <constraint firstAttribute="trailing" secondItem="NXP-Wd-PQQ" secondAttribute="trailing" constant="10" id="J4W-RX-FOS"/>
+                                        <constraint firstItem="NXP-Wd-PQQ" firstAttribute="leading" secondItem="WT0-jX-BDx" secondAttribute="leading" constant="10" id="caU-os-9Oo"/>
+                                        <constraint firstItem="NXP-Wd-PQQ" firstAttribute="top" secondItem="WT0-jX-BDx" secondAttribute="top" constant="5" id="nCa-e1-JML"/>
+                                        <constraint firstAttribute="height" constant="50" id="oC4-hH-G3z"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tey-te-ISe" customClass="TextFieldView" customModule="NFTMarket" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="540" width="300" height="50"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BBC-VK-zfW">
+                                            <rect key="frame" x="10" y="5" width="280" height="40"/>
+                                            <color key="textColor" name="TextFieldPrimary"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="BBC-VK-zfW" firstAttribute="leading" secondItem="Tey-te-ISe" secondAttribute="leading" constant="10" id="66A-pA-Prh"/>
+                                        <constraint firstAttribute="trailing" secondItem="BBC-VK-zfW" secondAttribute="trailing" constant="10" id="HGY-m9-b8X"/>
+                                        <constraint firstAttribute="height" constant="50" id="Ttd-VU-USN"/>
+                                        <constraint firstAttribute="bottom" secondItem="BBC-VK-zfW" secondAttribute="bottom" constant="5" id="iP4-By-IDX"/>
+                                        <constraint firstItem="BBC-VK-zfW" firstAttribute="top" secondItem="Tey-te-ISe" secondAttribute="top" constant="5" id="kiZ-kQ-ciK"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXq-Lm-Rki" customClass="PrimaryButton" customModule="NFTMarket" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="610" width="300" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="N6a-SQ-qoQ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Register"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" name="Purple"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" systemColor="systemTealColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="buttonTitle" value="Register"/>
+                                        <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                                            <point key="value" x="0.5" y="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                                            <point key="value" x="0.5" y="0.29999999999999999"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onClickRegisterButton:" destination="-1" eventType="touchUpInside" id="v4f-4w-wui"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1v-ae-wPe">
+                                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="13C-za-kcs"/>
+                                        <constraint firstAttribute="height" constant="50" id="XxM-45-rHH"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="11"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Back">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onClickBack:" destination="-1" eventType="touchUpInside" id="laq-Hh-12t"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="AXq-Lm-Rki" firstAttribute="leading" secondItem="hpT-rq-aKH" secondAttribute="leading" constant="10" id="2Jk-hY-QDy"/>
+                                <constraint firstItem="Tey-te-ISe" firstAttribute="leading" secondItem="hpT-rq-aKH" secondAttribute="leading" constant="10" id="6PB-mk-Fky"/>
+                                <constraint firstItem="aIf-bE-MiA" firstAttribute="centerX" secondItem="hpT-rq-aKH" secondAttribute="centerX" id="6vu-TW-jOT"/>
+                                <constraint firstItem="WT0-jX-BDx" firstAttribute="top" secondItem="40r-kq-3aY" secondAttribute="bottom" constant="10" id="8LD-rc-ifW"/>
+                                <constraint firstAttribute="trailing" secondItem="40r-kq-3aY" secondAttribute="trailing" constant="10" id="B7e-Vt-fTq"/>
+                                <constraint firstItem="40r-kq-3aY" firstAttribute="top" secondItem="NBk-Ar-SO8" secondAttribute="bottom" constant="10" id="BmU-Sm-8ps"/>
+                                <constraint firstAttribute="trailing" secondItem="AXq-Lm-Rki" secondAttribute="trailing" constant="10" id="E3w-iF-tJA"/>
+                                <constraint firstItem="Tey-te-ISe" firstAttribute="top" secondItem="WT0-jX-BDx" secondAttribute="bottom" constant="10" id="Lg2-QV-jMf"/>
+                                <constraint firstItem="WT0-jX-BDx" firstAttribute="leading" secondItem="hpT-rq-aKH" secondAttribute="leading" constant="10" id="Nev-1I-num"/>
+                                <constraint firstItem="AXq-Lm-Rki" firstAttribute="top" secondItem="Tey-te-ISe" secondAttribute="bottom" constant="20" id="Rut-bm-XQo"/>
+                                <constraint firstItem="v1v-ae-wPe" firstAttribute="leading" secondItem="hpT-rq-aKH" secondAttribute="leading" constant="10" id="ZWp-sb-Yea"/>
+                                <constraint firstItem="aIf-bE-MiA" firstAttribute="top" secondItem="hpT-rq-aKH" secondAttribute="top" id="bH3-dK-kNY"/>
+                                <constraint firstItem="NBk-Ar-SO8" firstAttribute="leading" secondItem="hpT-rq-aKH" secondAttribute="leading" constant="10" id="dSz-Nq-T3n"/>
+                                <constraint firstAttribute="bottom" secondItem="AXq-Lm-Rki" secondAttribute="bottom" constant="20" id="gJz-J9-UMI"/>
+                                <constraint firstAttribute="trailing" secondItem="Tey-te-ISe" secondAttribute="trailing" constant="10" id="gjT-uj-Cf6"/>
+                                <constraint firstItem="v1v-ae-wPe" firstAttribute="top" secondItem="hpT-rq-aKH" secondAttribute="top" constant="10" id="huD-cv-UoO"/>
+                                <constraint firstItem="40r-kq-3aY" firstAttribute="leading" secondItem="hpT-rq-aKH" secondAttribute="leading" constant="10" id="pfw-GZ-Wc0"/>
+                                <constraint firstAttribute="trailing" secondItem="WT0-jX-BDx" secondAttribute="trailing" constant="10" id="r1w-KU-bLC"/>
+                                <constraint firstAttribute="height" priority="250" constant="800" id="rDY-Jb-ZV0"/>
+                                <constraint firstAttribute="trailing" secondItem="NBk-Ar-SO8" secondAttribute="trailing" constant="10" id="v9S-Sx-bYe"/>
+                                <constraint firstItem="NBk-Ar-SO8" firstAttribute="top" secondItem="aIf-bE-MiA" secondAttribute="bottom" constant="10" id="vuc-uO-lzj"/>
+                            </constraints>
+                        </view>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="61x-wY-l5a" firstAttribute="top" secondItem="NBk-Ar-SO8" secondAttribute="top" constant="5" id="3dz-sn-ig3"/>
-                        <constraint firstItem="61x-wY-l5a" firstAttribute="leading" secondItem="NBk-Ar-SO8" secondAttribute="leading" constant="10" id="EAS-3z-zdt"/>
-                        <constraint firstAttribute="height" constant="50" id="O3e-tY-e59"/>
-                        <constraint firstAttribute="bottom" secondItem="61x-wY-l5a" secondAttribute="bottom" constant="5" id="QbP-ot-0xB"/>
-                        <constraint firstAttribute="trailing" secondItem="61x-wY-l5a" secondAttribute="trailing" constant="10" id="aF3-Fu-rBh"/>
+                        <constraint firstItem="hpT-rq-aKH" firstAttribute="top" secondItem="t9g-vW-5xy" secondAttribute="top" id="Cu5-GM-qMN"/>
+                        <constraint firstAttribute="bottom" secondItem="hpT-rq-aKH" secondAttribute="bottom" id="VBj-bq-v1a"/>
+                        <constraint firstAttribute="trailing" secondItem="hpT-rq-aKH" secondAttribute="trailing" id="VXX-EU-rfl"/>
+                        <constraint firstItem="hpT-rq-aKH" firstAttribute="leading" secondItem="t9g-vW-5xy" secondAttribute="leading" id="yha-fx-BQM"/>
                     </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="5"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40r-kq-3aY" customClass="TextFieldView" customModule="NFTMarket" customModuleProvider="target">
-                    <rect key="frame" x="20" y="483" width="374" height="50"/>
-                    <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uRG-HX-4Rv">
-                            <rect key="frame" x="10" y="5" width="354" height="40"/>
-                            <color key="textColor" name="TextFieldPrimary"/>
-                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="bottom" secondItem="uRG-HX-4Rv" secondAttribute="bottom" constant="5" id="1EK-sY-JD3"/>
-                        <constraint firstItem="uRG-HX-4Rv" firstAttribute="top" secondItem="40r-kq-3aY" secondAttribute="top" constant="5" id="S9H-gB-jpJ"/>
-                        <constraint firstAttribute="trailing" secondItem="uRG-HX-4Rv" secondAttribute="trailing" constant="10" id="XNt-g4-XHK"/>
-                        <constraint firstAttribute="height" constant="50" id="dJe-mP-Qx1"/>
-                        <constraint firstItem="uRG-HX-4Rv" firstAttribute="leading" secondItem="40r-kq-3aY" secondAttribute="leading" constant="10" id="kM2-ft-qk4"/>
-                    </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="5"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WT0-jX-BDx" customClass="TextFieldView" customModule="NFTMarket" customModuleProvider="target">
-                    <rect key="frame" x="20" y="543" width="374" height="50"/>
-                    <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NXP-Wd-PQQ">
-                            <rect key="frame" x="10" y="5" width="354" height="40"/>
-                            <color key="textColor" name="TextFieldPrimary"/>
-                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="bottom" secondItem="NXP-Wd-PQQ" secondAttribute="bottom" constant="5" id="IYB-mP-8Ey"/>
-                        <constraint firstAttribute="trailing" secondItem="NXP-Wd-PQQ" secondAttribute="trailing" constant="10" id="J4W-RX-FOS"/>
-                        <constraint firstItem="NXP-Wd-PQQ" firstAttribute="leading" secondItem="WT0-jX-BDx" secondAttribute="leading" constant="10" id="caU-os-9Oo"/>
-                        <constraint firstItem="NXP-Wd-PQQ" firstAttribute="top" secondItem="WT0-jX-BDx" secondAttribute="top" constant="5" id="nCa-e1-JML"/>
-                        <constraint firstAttribute="height" constant="50" id="oC4-hH-G3z"/>
-                    </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="5"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tey-te-ISe" customClass="TextFieldView" customModule="NFTMarket" customModuleProvider="target">
-                    <rect key="frame" x="20" y="603" width="374" height="50"/>
-                    <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BBC-VK-zfW">
-                            <rect key="frame" x="10" y="5" width="354" height="40"/>
-                            <color key="textColor" name="TextFieldPrimary"/>
-                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </textField>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstItem="BBC-VK-zfW" firstAttribute="leading" secondItem="Tey-te-ISe" secondAttribute="leading" constant="10" id="66A-pA-Prh"/>
-                        <constraint firstAttribute="trailing" secondItem="BBC-VK-zfW" secondAttribute="trailing" constant="10" id="HGY-m9-b8X"/>
-                        <constraint firstAttribute="height" constant="50" id="Ttd-VU-USN"/>
-                        <constraint firstAttribute="bottom" secondItem="BBC-VK-zfW" secondAttribute="bottom" constant="5" id="iP4-By-IDX"/>
-                        <constraint firstItem="BBC-VK-zfW" firstAttribute="top" secondItem="Tey-te-ISe" secondAttribute="top" constant="5" id="kiZ-kQ-ciK"/>
-                    </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="5"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXq-Lm-Rki" customClass="PrimaryButton" customModule="NFTMarket" customModuleProvider="target">
-                    <rect key="frame" x="20" y="792" width="374" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="N6a-SQ-qoQ"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Register"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="5"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                            <color key="value" name="Purple"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                            <color key="value" systemColor="systemTealColor"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="string" keyPath="buttonTitle" value="Register"/>
-                        <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
-                            <point key="value" x="0.5" y="1"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
-                            <point key="value" x="0.5" y="0.29999999999999999"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="onClickRegisterButton:" destination="-1" eventType="touchUpInside" id="v4f-4w-wui"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1v-ae-wPe">
-                    <rect key="frame" x="0.0" y="44" width="50" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="13C-za-kcs"/>
-                        <constraint firstAttribute="height" constant="50" id="XxM-45-rHH"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="11"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Back">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <connections>
-                        <action selector="onClickBack:" destination="-1" eventType="touchUpInside" id="laq-Hh-12t"/>
-                    </connections>
-                </button>
+                </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.035670701409999998" green="0.01677674614" blue="0.10088450459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="v1v-ae-wPe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="71Q-CH-7r5"/>
-                <constraint firstItem="v1v-ae-wPe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7k6-ih-9vR"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tey-te-ISe" secondAttribute="trailing" constant="20" id="BWg-wC-Zko"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WT0-jX-BDx" secondAttribute="trailing" constant="20" id="D07-ZG-nOt"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AXq-Lm-Rki" secondAttribute="trailing" constant="20" id="Jqh-RH-mSp"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="40r-kq-3aY" secondAttribute="trailing" constant="20" id="OGB-Cz-sff"/>
-                <constraint firstItem="WT0-jX-BDx" firstAttribute="top" secondItem="40r-kq-3aY" secondAttribute="bottom" constant="10" id="RNO-hg-25W"/>
-                <constraint firstItem="WT0-jX-BDx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Ra1-2k-sHT"/>
-                <constraint firstAttribute="trailing" secondItem="NBk-Ar-SO8" secondAttribute="trailing" constant="20" id="VeV-bW-6mL"/>
-                <constraint firstItem="40r-kq-3aY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ZgE-Yv-Q5t"/>
-                <constraint firstItem="aIf-bE-MiA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="abG-9u-W10"/>
-                <constraint firstItem="NBk-Ar-SO8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="c3J-nQ-kWY"/>
-                <constraint firstItem="AXq-Lm-Rki" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="cDz-cf-emS"/>
-                <constraint firstItem="NBk-Ar-SO8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="dJb-jm-pmf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AXq-Lm-Rki" secondAttribute="bottom" constant="20" id="jNN-9L-OqM"/>
-                <constraint firstItem="aIf-bE-MiA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kZ3-XR-b8J"/>
-                <constraint firstItem="Tey-te-ISe" firstAttribute="top" secondItem="WT0-jX-BDx" secondAttribute="bottom" constant="10" id="tbr-Hi-7MH"/>
-                <constraint firstItem="40r-kq-3aY" firstAttribute="top" secondItem="NBk-Ar-SO8" secondAttribute="bottom" constant="10" id="wbI-cL-chA"/>
-                <constraint firstItem="Tey-te-ISe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="zDs-y1-H76"/>
+                <constraint firstItem="t9g-vW-5xy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="F7v-x8-EXV"/>
+                <constraint firstAttribute="bottom" secondItem="t9g-vW-5xy" secondAttribute="bottom" id="FYC-Pu-vOP"/>
+                <constraint firstItem="t9g-vW-5xy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TyY-XM-d8c"/>
+                <constraint firstAttribute="trailing" secondItem="t9g-vW-5xy" secondAttribute="trailing" id="aIa-sW-Sz1"/>
+                <constraint firstItem="hpT-rq-aKH" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="giA-XI-lAa"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </view>
