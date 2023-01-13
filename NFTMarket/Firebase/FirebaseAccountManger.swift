@@ -12,7 +12,7 @@ import Firebase
 
 final class FirebaseAccountManger {
     
-    enum FirebaseAPIError: Error, LocalizedError {
+    enum FirebaseAPIError: Error, LocalizedError, Equatable {
         
         case passwordLengthError
         case userExistError

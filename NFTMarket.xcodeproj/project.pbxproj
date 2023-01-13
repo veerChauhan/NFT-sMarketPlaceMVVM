@@ -14,6 +14,7 @@
 		FA1AC96629717F30002C075B /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AC96529717F30002C075B /* ValidationError.swift */; };
 		FA1AC96829717F84002C075B /* ValidatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AC96729717F84002C075B /* ValidatorFactory.swift */; };
 		FA1AC96A29717FB0002C075B /* ValidatorResultFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AC96929717FB0002C075B /* ValidatorResultFactory.swift */; };
+		FA1AC96D29720A14002C075B /* FirebaseAccountMangerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AC96C29720A14002C075B /* FirebaseAccountMangerTest.swift */; };
 		FAA69D71285920A300F5FD21 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA69D6F285920A300F5FD21 /* RegisterViewController.swift */; };
 		FAA69D72285920A300F5FD21 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA69D70285920A300F5FD21 /* RegisterViewController.xib */; };
 		FAA69D74285920B100F5FD21 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA69D73285920B100F5FD21 /* RegisterViewModel.swift */; };
@@ -28,7 +29,7 @@
 		FAAAF735285A160200369C3E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FAAAF734285A160200369C3E /* FirebaseFirestore */; };
 		FAAAF737285A160200369C3E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = FAAAF736285A160200369C3E /* FirebaseMessaging */; };
 		FAAAF739285A160200369C3E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FAAAF738285A160200369C3E /* FirebaseStorage */; };
-		FAAAF73B285A17F600369C3E /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF73A285A17F400369C3E /* FirebaseManager.swift */; };
+		FAAAF73B285A17F600369C3E /* FirebaseAccountManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF73A285A17F400369C3E /* FirebaseAccountManger.swift */; };
 		FAAAF73D285A1A6900369C3E /* FirebaseAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF73C285A1A6900369C3E /* FirebaseAPITest.swift */; };
 		FAAAF741285A1B3600369C3E /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF740285A1B3600369C3E /* RegisterModel.swift */; };
 		FAAAF745285A7CF400369C3E /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAF744285A7CF400369C3E /* Validator.swift */; };
@@ -87,6 +88,7 @@
 		FA1AC96529717F30002C075B /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		FA1AC96729717F84002C075B /* ValidatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorFactory.swift; sourceTree = "<group>"; };
 		FA1AC96929717FB0002C075B /* ValidatorResultFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorResultFactory.swift; sourceTree = "<group>"; };
+		FA1AC96C29720A14002C075B /* FirebaseAccountMangerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAccountMangerTest.swift; sourceTree = "<group>"; };
 		FAA69D6F285920A300F5FD21 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FAA69D70285920A300F5FD21 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		FAA69D73285920B100F5FD21 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
@@ -94,7 +96,7 @@
 		FAA69D792859218800F5FD21 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		FAA69D7B2859303B00F5FD21 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		FAAAF729285A138800369C3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FAAAF73A285A17F400369C3E /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		FAAAF73A285A17F400369C3E /* FirebaseAccountManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAccountManger.swift; sourceTree = "<group>"; };
 		FAAAF73C285A1A6900369C3E /* FirebaseAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPITest.swift; sourceTree = "<group>"; };
 		FAAAF740285A1B3600369C3E /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		FAAAF744285A7CF400369C3E /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
@@ -190,6 +192,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		FA1AC96B297209E0002C075B /* FirebaseAccountManagerTest */ = {
+			isa = PBXGroup;
+			children = (
+				FA1AC96C29720A14002C075B /* FirebaseAccountMangerTest.swift */,
+			);
+			path = FirebaseAccountManagerTest;
+			sourceTree = "<group>";
+		};
 		FAA69D6E2859209600F5FD21 /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,7 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				FAAAF729285A138800369C3E /* GoogleService-Info.plist */,
-				FAAAF73A285A17F400369C3E /* FirebaseManager.swift */,
+				FAAAF73A285A17F400369C3E /* FirebaseAccountManger.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -309,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD5B2AF285770980080E6AC /* NFTMarketTests.swift */,
+				FA1AC96B297209E0002C075B /* FirebaseAccountManagerTest */,
 				FAAAF73C285A1A6900369C3E /* FirebaseAPITest.swift */,
 			);
 			path = NFTMarketTests;
@@ -680,7 +691,7 @@
 				FA1AC96629717F30002C075B /* ValidationError.swift in Sources */,
 				FA1AC96429717F16002C075B /* ValidatorType.swift in Sources */,
 				FAD5B2DF2857A6840080E6AC /* LoginViewModel.swift in Sources */,
-				FAAAF73B285A17F600369C3E /* FirebaseManager.swift in Sources */,
+				FAAAF73B285A17F600369C3E /* FirebaseAccountManger.swift in Sources */,
 				FAD5B2E32857A8E60080E6AC /* SplashViewModel.swift in Sources */,
 				FAD5B2E82857D2760080E6AC /* ViewController.swift in Sources */,
 				FA1AC96229717B6D002C075B /* StringConstants.swift in Sources */,
@@ -703,6 +714,7 @@
 			files = (
 				FAD5B2B0285770980080E6AC /* NFTMarketTests.swift in Sources */,
 				FAAAF73D285A1A6900369C3E /* FirebaseAPITest.swift in Sources */,
+				FA1AC96D29720A14002C075B /* FirebaseAccountMangerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
