@@ -7,7 +7,7 @@
 
 import Foundation
 
-class UserNameValidator: ValidatorConvertibleProtocol {
+class RVUserNameValidator: ValidatorConvertibleProtocol {
     func validated(_ value: String) throws {
         guard value.count > 4 && value.count < 12 else {
             throw RVValidationError("User name is invalid")

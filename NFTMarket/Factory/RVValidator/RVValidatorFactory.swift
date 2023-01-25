@@ -12,17 +12,17 @@ enum RVValidatorFactory {
         switch _type {
             
         case .email:
-            return EmailValidator()
+            return RVEmailValidator()
         case .password:
-            return PasswordValidator()
+            return RVPasswordValidator()
         case .username:
-            return UserNameValidator()
+            return RVUserNameValidator()
         case .mobile:
-            return MobileNumberValidator()
+            return RVMobileNumberValidator()
         case .requiredField(let fieldName):
-            return RequiredFieldValidator(fieldName)
+            return RVRequiredFieldValidator(fieldName)
         case .matchField(fieldName: let fieldName, secoundField: let secoundField):
-            return MatchFieldValidator(fieldName, secoundField)
+            return RVMatchFieldValidator(fieldName, secoundField)
         }
     }
 }
