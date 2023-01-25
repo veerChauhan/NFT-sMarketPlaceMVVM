@@ -1,12 +1,12 @@
 //
-//  ValidatorType.swift
+//  RVValidatorType.swift
 //  NFTMarket
 //
 //  Created by Ravi Ranjan on 13/01/23.
 //
 
 import Foundation
-enum ValidatorType {
+enum RVValidatorType {
     case email
     case password
     case username

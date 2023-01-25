@@ -7,7 +7,7 @@ target 'NFTMarket' do
 
   # Pods for NFTMarket
 pod 'IQKeyboardManagerSwift'
-
+pod 'RVNetwork'
   target 'NFTMarketTests' do
     inherit! :search_paths
     # Pods for testing

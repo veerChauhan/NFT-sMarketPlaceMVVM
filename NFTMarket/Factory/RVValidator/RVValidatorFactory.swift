@@ -1,14 +1,14 @@
 //
-//  ValidatorFactory.swift
+//  RVValidatorFactory.swift
 //  NFTMarket
 //
 //  Created by Ravi Ranjan on 13/01/23.
 //
 
 import Foundation
-enum ValidatorFactory {
+enum RVValidatorFactory {
     
-    static func validate(with _type: ValidatorType) -> ValidatorConvertibleProtocol {
+    static func validate(with _type: RVValidatorType) -> RVValidatorConvertibleProtocol {
         switch _type {
             
         case .email:

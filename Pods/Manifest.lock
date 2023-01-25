@@ -1,16 +1,20 @@
 PODS:
   - IQKeyboardManagerSwift (6.5.9)
+  - RVNetwork (0.1.1)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
+  - RVNetwork
 
 SPEC REPOS:
   trunk:
     - IQKeyboardManagerSwift
+    - RVNetwork
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  RVNetwork: c84903659ec40b5c796f8a8bb3cf13035c15e3d1
 
-PODFILE CHECKSUM: e48f53927c596ec8bbf29b328bb2a99af266ce6a
+PODFILE CHECKSUM: 72aebee70523fa9ea6b516e59c35bc4835e47840
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
